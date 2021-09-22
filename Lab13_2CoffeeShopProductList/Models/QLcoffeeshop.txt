@@ -1,0 +1,20 @@
+﻿Create database QLcoffeeshop;
+use QLcoffeeshop;
+
+create table products(
+id int not null auto_increment,
+name varchar(50),
+description varchar(100),
+price decimal(4,2),
+catagory varchar(100),
+Primary Key(id)
+);
+
+insert into products (id, name, description, price, catagory) values (1, 'Mocha', 'Chocolate coffee', 2.99, 'Drink');
+insert into products (id, name, description, price, catagory) values (2, 'Coffee', 'Plain coffee', .99, 'Drink');
+insert into products (id, name, description, price, catagory) values (3, 'Latte', 'Foamy coffee', 3.99, 'Drink');
+insert into products (id, name, description, price, catagory) values (4, 'Donut', 'A sweet treat', 1.99, 'Pastry');
+insert into products (id, name, description, price, catagory) values (5, 'Muffin', 'A classic pastry', 1.50, 'Pastry');
+insert into products (id, name, description, price, catagory) values (6, 'Sandwich', 'Ham and turkey', 4.99, 'Lunch Item');
+insert into products (id, name, description, price, catagory) values (7, 'Soup', 'Chicken noodle soup', 3.99, 'Lunch Item');
+
